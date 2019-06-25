@@ -15,9 +15,11 @@ class GenreButtonScreen: UIViewController {
     }
     
     @IBAction func StopButtonTapped(_ sender: UIButton) {
+        musicPlayer.stop()
     }
     
     @IBAction func NextButtonTapped(_ sender: Any) {
+        musicPlayer.skipToNextItem()
     }
     
     func playGenre(genre: String){
