@@ -11,7 +11,11 @@ class GenreButtonScreen: UIViewController {
     }
     
     @IBAction func GenreButtonTapped(_ sender: UIButton) {
-        playGenre(genre: sender.currentTitle!)
+        MPMediaLibrary.requestAuthorization { (status) in
+            if status == .authorized{
+                self.playGenre(genre: sender.currentTitle!)
+            }
+        }
     }
     
     @IBAction func StopButtonTapped(_ sender: UIButton) {
