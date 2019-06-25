@@ -93,7 +93,7 @@
                                     <action selector="StopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BQW-ge-qmj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="418-BY-nJt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="418-BY-nJt">
                                 <rect key="frame" x="217" y="598" width="120" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -113,12 +113,19 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="kuI-xL-J5U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7ec-ci-zAz"/>
+                            <constraint firstItem="418-BY-nJt" firstAttribute="trailing" secondItem="kuI-xL-J5U" secondAttribute="trailing" id="P42-Mf-WKE"/>
                             <constraint firstItem="418-BY-nJt" firstAttribute="centerY" secondItem="sxv-Oa-Ffv" secondAttribute="centerY" id="SF1-I0-ht8"/>
+                            <constraint firstItem="418-BY-nJt" firstAttribute="top" secondItem="kuI-xL-J5U" secondAttribute="bottom" constant="100" id="V6q-Cf-lDE"/>
                             <constraint firstItem="sxv-Oa-Ffv" firstAttribute="top" secondItem="uXy-IE-wtp" secondAttribute="bottom" constant="100" id="ZhN-z7-PNa"/>
                             <constraint firstItem="kuI-xL-J5U" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="prF-h6-iSW"/>
                             <constraint firstItem="sxv-Oa-Ffv" firstAttribute="leading" secondItem="uXy-IE-wtp" secondAttribute="leading" id="sNE-LB-NQi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="SF1-I0-ht8"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
